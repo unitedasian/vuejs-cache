@@ -1,0 +1,13 @@
+{
+  "name": "uam-vuejs-cache",
+  "version": "0.1.0",
+  "description": "Vuejs cache plugin",
+  "main": "src/index.js",
+  "repository": "git@gitlab.united-asian.com:vuejs/cache.git",
+  "author": "Olivier Pichon <op@united-asian.com>",
+  "license": "proprietary",
+  "private": true,
+  "dependencies": {
+    "vue": "^2.5.16"
+  }
+}
