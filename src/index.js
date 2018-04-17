@@ -1,6 +1,3 @@
-import VueAuthenticate from 'vue-authenticate'
-import VueAxios from 'vue-axios'
-
 const VueCachePlugin = {
   /**
    * Install cache plugin
@@ -18,7 +15,7 @@ const VueCachePlugin = {
 }
 
 if (typeof window !== 'undefined' && window.Vue) {
-    window.Vue.use(VueCachePlugin)
+  window.Vue.use(VueCachePlugin)
 }
 
 export default VueCachePlugin
