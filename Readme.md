@@ -42,7 +42,7 @@ Vue.use(cachePlugin, {options})
 |:-----------------------|:---------------------------------------------------------|:---------|:---------|
 | store                  | Main store to which the cache module is attached to      | Object   | true     |
 | axios                  | The instance of axios used by app                        | Object   | true     | 
-| dbVersionHeaderKey     | Custom response header key for db version                       | String   | true     |
+| dbVersionHeaderKey     | Custom response header key for db version                | String   | true     |
 | cacheRoute             | Route to fetch cache data                                | String   | true     |
 
 Once you have registered the plugin. It attaches a `uam_cache` module to the store, The cached data received from the cacheRoute can be accessed as
