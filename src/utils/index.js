@@ -56,9 +56,9 @@ function createModule (dbVersion, cacheData) {
   }
 }
 
-function initAxiosInterceptor (store, axios, versionHeaderKey, cacheRoute) {
+function initAxiosInterceptor (store, axios, dbVersionHeaderKey, cacheRoute) {
   axios.interceptors.response.use((response) => {
-    let dbVersion = response.headers[versionHeaderKey]
+    let dbVersion = response.headers[dbVersionHeaderKey]
 
     if (store.getters[`${MODULE_NAME}/dbVersion`] !== dbVersion) {
       fetchCacheData(axios, store, cacheRoute)
@@ -83,7 +83,7 @@ function initAxiosInterceptor (store, axios, versionHeaderKey, cacheRoute) {
   })
 }
 
-export function initCacheModule (store, axios, versionHeaderKey, cacheRoute) {
+export function initCacheModule (store, axios, dbVersionHeaderKey, cacheRoute) {
   return new Promise((resolve) => {
     cacheDb.allDocs({
       include_docs: true,
@@ -97,7 +97,7 @@ export function initCacheModule (store, axios, versionHeaderKey, cacheRoute) {
 
         store.registerModule(MODULE_NAME, module)
 
-        initAxiosInterceptor(store, axios, versionHeaderKey, cacheRoute)
+        initAxiosInterceptor(store, axios, dbVersionHeaderKey, cacheRoute)
 
         resolve(module)
       })
