@@ -5,13 +5,13 @@
 ### via npm
 
 ```bash
-npm install uam-vuejs-cache
+npm install uam-vue-cache
 ```
 
 ### via yarn
 
 ```bash
-yarn add uam-vuejs-cache
+yarn add uam-vue-cache
 ```
 
 ## Usage
