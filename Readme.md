@@ -13,6 +13,12 @@ npm install uam-vue-cache
 ```bash
 yarn add uam-vue-cache
 ```
+## Requirements
+This package need following packages installed in your app
+
+  - pouchdb-browser@^6.4.3
+  - vue@^2.5.16
+  - vuex@^3.0.1
 
 ## Usage
 
