@@ -1,5 +1,5 @@
 {
-  "name": "uam-vuejs-cache",
+  "name": "uam-vue-cache",
   "version": "0.1.0",
   "description": "Vuejs cache plugin",
   "main": "src/index.js",
