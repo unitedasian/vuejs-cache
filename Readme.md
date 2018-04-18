@@ -54,7 +54,7 @@ Or
 
 ```js
 
-store.uam_cache.cache[key]
+store.uam_cache.cache[<key>]
 ```
 
 ### use getters
