@@ -5,13 +5,13 @@
 ### via npm
 
 ```bash
-npm install uam-vue-cache
+npm install uam-vuejs-cache
 ```
 
 ### via yarn
 
 ```bash
-yarn add uam-vue-cache
+yarn add uam-vuejs-cache
 ```
 ## Requirements
 This package need following packages installed in your app
