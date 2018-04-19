@@ -12,3 +12,9 @@ install:
 
 lint:
 	yarn run lint
+
+patch:
+	npm version patch
+
+publish:
+	npm publish --access public
