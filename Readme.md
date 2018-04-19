@@ -5,14 +5,23 @@
 ### via npm
 
 ```bash
-npm install uam-vue-cache
+npm install uam-vuejs-cache
 ```
 
 ### via yarn
 
 ```bash
-yarn add uam-vue-cache
+yarn add uam-vuejs-cache
 ```
+## Requirements
+This package need following packages installed in your app
+
+  - pouchdb-browser@^6.4.3
+  - vue@^2.5.16
+  - vuex@^3.0.1
+
+### Api requirements
+Your api needs to attach a custom header for db version, the cache data is updated based on this version.
 
 ## Usage
 
@@ -33,7 +42,7 @@ Vue.use(cachePlugin, {options})
 |:-----------------------|:---------------------------------------------------------|:---------|:---------|
 | store                  | Main store to which the cache module is attached to      | Object   | true     |
 | axios                  | The instance of axios used by app                        | Object   | true     | 
-| dbVersionHeaderKey     | Response header key for db version                       | String   | true     |
+| dbVersionHeaderKey     | Custom response header key for db version                | String   | true     |
 | cacheRoute             | Route to fetch cache data                                | String   | true     |
 
 Once you have registered the plugin. It attaches a `uam_cache` module to the store, The cached data received from the cacheRoute can be accessed as
@@ -48,7 +57,7 @@ Or
 
 ```js
 
-store.uam_cache.cache[key]
+store.uam_cache.cache[<key>]
 ```
 
 ### use getters
