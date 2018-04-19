@@ -1,6 +1,9 @@
 build:
 	yarn run build
 
+dev:
+	yarn run dev
+
 fix:
 	yarn run fix
 

@@ -5,6 +5,7 @@ const uglifyPlugin = new webpack.optimize.UglifyJsPlugin({
   sourceMap : true
 })
 
+const plugins = []
 
 if (process.env.NODE_ENV === "production") {
   plugins.push(uglifyPlugin)
