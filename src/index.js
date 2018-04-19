@@ -1,4 +1,4 @@
-import {initCacheModule} from "./utils";
+import {initCacheModule} from './utils'
 
 const VueCachePlugin = {
   /**

@@ -41,14 +41,14 @@ function createModule (dbVersion, cacheData) {
       updatingCache: state => state.updating_cache
     },
     mutations: {
-      ['UPDATE_DB_VERSION'] (state, version) {
+      'UPDATE_DB_VERSION' (state, version) {
         state.db_version = version
       },
-      ['UPDATE_CACHE'] (state, cache) {
+      'UPDATE_CACHE' (state, cache) {
         state.cache = cache
         state.updating_cache = false
       },
-      ['UPDATE_CACHE_START'] (state) {
+      'UPDATE_CACHE_START' (state) {
         state.updating_cache = true
       }
     },
