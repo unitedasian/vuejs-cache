@@ -14,7 +14,6 @@ module.exports = merge(require('./webpack.base'), {
   },
 
   externals: {
-    'pouchdb-browser': 'pouchdb-browser',
-    'vue': 'vue'
+    'pouchdb-browser': 'pouchdb-browser'
   }
 })

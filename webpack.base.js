@@ -30,12 +30,5 @@ module.exports = {
       }
     ]
   },
-  plugins,
-  resolve: {
-    extensions: ['.js'],
-    alias: {
-      'vue$': 'vue/dist/vue.esm.js',
-      '@': './src'
-    }
-  }
+  plugins
 }
