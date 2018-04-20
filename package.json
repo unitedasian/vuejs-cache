@@ -2,9 +2,8 @@
   "name": "@uam/vuejs-cache",
   "version": "0.1.1",
   "description": "Vuejs cache plugin",
-  "homepage": "https://github.com/unitedasian/vuejs-user",
+  "homepage": "https://github.com/unitedasian/vuejs-cache",
   "main": "dist/index.js",
-  "repository": "git@gitlab.united-asian.com:vuejs/cache.git",
   "author": "Olivier Pichon <op@united-asian.com>",
   "license": "MIT",
   "scripts": {

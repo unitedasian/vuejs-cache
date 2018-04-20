@@ -5,15 +5,16 @@
 ### via npm
 
 ```bash
-npm install uam-vuejs-cache
+npm install @uam/vuejs-cache
 ```
 
 ### via yarn
 
 ```bash
-yarn add uam-vuejs-cache
+yarn add @uam/vuejs-cache
 ```
 ## Requirements
+
 This package need following packages installed in your app
 
   - pouchdb-browser@^6.4.3
@@ -21,6 +22,7 @@ This package need following packages installed in your app
   - vuex@^3.0.1
 
 ### Api requirements
+
 Your api needs to attach a custom header for db version, the cache data is updated based on this version.
 
 ## Usage
@@ -30,7 +32,7 @@ Install Vuejs cache plugin as follows:
 ```js
 # main.js
 
-import cachePlugin from 'uam-vuejs-cache'
+import cachePlugin from '@uam/vuejs-cache'
 
 Vue.use(cachePlugin, {options})
 
