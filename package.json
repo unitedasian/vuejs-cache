@@ -1,12 +1,12 @@
 {
-  "name": "uam-vuejs-cache",
+  "name": "@uam/vuejs-cache",
   "version": "0.1.1",
   "description": "Vuejs cache plugin",
+  "homepage": "https://github.com/unitedasian/vuejs-user",
   "main": "dist/index.js",
   "repository": "git@gitlab.united-asian.com:vuejs/cache.git",
   "author": "Olivier Pichon <op@united-asian.com>",
-  "license": "proprietary",
-  "private": true,
+  "license": "MIT",
   "scripts": {
     "build": "rm -rf ./dist/* && NODE_ENV=production webpack --colors --hide-modules",
     "dev": "rm -rf ./dist/* && webpack --colors --hide-modules",
