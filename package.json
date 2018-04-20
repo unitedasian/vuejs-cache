@@ -1,6 +1,6 @@
 {
   "name": "@uam/vuejs-cache",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Vuejs cache plugin",
   "homepage": "https://github.com/unitedasian/vuejs-cache",
   "main": "dist/index.js",
